@@ -1,6 +1,10 @@
 ### Eclipse ###
-.metadata
-bin/
+.metadata/
+Servers/
+*.class
+*.classpath
+/target/
+/bin/
 tmp/
 *.tmp
 *.bak
@@ -10,3 +14,5 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+.idea/
+*.iml
