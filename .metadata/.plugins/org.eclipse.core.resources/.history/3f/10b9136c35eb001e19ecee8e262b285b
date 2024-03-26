@@ -1,0 +1,8 @@
+package Day_240326;
+
+public class Prac {
+public static void main(String[] args) {
+	String[] arr = {"a","b","c"};
+	System.out.println(arr);
+}
+}

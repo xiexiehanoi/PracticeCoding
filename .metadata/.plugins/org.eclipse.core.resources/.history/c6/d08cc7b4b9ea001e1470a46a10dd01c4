@@ -1,0 +1,19 @@
+package Day_240325;
+
+class Barista {
+	String name;
+	int salary;
+	int coffeeTotalNum;
+	
+	public Barista(String name) {
+		this.name=name;
+	}
+	
+	public void showInfo() {
+		Barista baristalee = new Barista("lee");
+		baristalee.showInfo();
+		System.out.println("*** 바리스타 "+name+"이 만들었씁니다.");
+	}
+	
+	
+}
