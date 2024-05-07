@@ -6,7 +6,6 @@ public class Practice1 {
         for(int i=0; i<str.length;i++){
             if(Character.isUpperCase(str[i])){
                 answer[str[i]-'A']++;
-                System.out.println(char.str[i]);
             }
             else{
                 answer[str[i]-'a'+26]++;
