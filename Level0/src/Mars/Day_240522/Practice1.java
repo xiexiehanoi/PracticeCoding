@@ -1,16 +1,29 @@
 package Mars.Day_240522;
 
+import java.util.Arrays;
+
 public class Practice1 {
-    public static int solution(int[] sides) {
+    public int solution(int[] sides) {
         int answer = 0;
-        double x = Math.sqrt(Math.max(sides[0],sides[1])-Math.min(sides[0],sides[1]));
+        Arrays.sort(sides);
+        int min = sides[0];
+        int max = sides[1];
+
+        for(int i = max - min + 1 ; i <= max ; i++){
+            answer++;
+        }
+
+        for(int i = max + 1 ; i < min + max ; i++){
+            answer++;
+        }
 
         return answer;
     }
 
     public static void main(String[] args) {
-        int[] sides = {1,2};
-        int result = solution(sides);
+        int[] sides = {11,7};
+        Practice1 p = new Practice1();
+        int result = p.solution(sides);
         System.out.println("result = " + result);
     }
 }
